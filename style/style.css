@@ -1,0 +1,372 @@
+/*Общие правила*/
+*{
+	box-sizing: border-box;
+
+}
+body{
+	font-family: 'PT Serif', serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #5e5e5e;
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 15px;
+}
+li, ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.arrow{
+	width: 22px;
+	position: absolute;
+	background-color: #ffc222;
+	left: 100%;
+	color: white;
+	transform: translate(-100%, 0);
+	transition-duration: 0.5s;
+}
+.normal-btn a{
+	line-height: 40px;
+	border: 1px solid #ffc222;
+	font-family: 'Roboto', sans-serif;
+	padding: 0px 40px 0px 20px;
+	position: relative;
+}
+.normal-arrow{
+	width: 22px;
+	height: 41px;
+	position: absolute;
+	background-color: #ffc222;
+	left: 100%;
+	top: 0;
+	color: white;
+	transform: translate(-97%, 0);
+	transition-duration: 0.5s;
+	padding-left: 7px;
+}
+.normal-btn a:hover .normal-arrow{
+	width: 30px;
+	padding-left: 11px;
+}
+/*Верстаем первый блок*/
+.header__top{
+	background-color: #303030;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header__btn{
+	float: right;
+	background-color: #ffc222;
+	color: #1b1b1b;
+	line-height: 36px;
+	padding: 5px 20px 4px 50px;
+	position: relative;
+	font-weight: 500;
+	transition-duration: 0.5s;
+}
+.header__btn:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.header__btn:before{
+	content: "\f0b1";
+	 font-family: 'icomoon' !important;
+	 position: absolute;
+	 left: 22px;
+
+	 color: #1b1b1b;
+}
+
+.header__btn:hover{
+	background-color: #ffd355;
+	
+	
+}
+
+
+.header__mail, .header__phone{
+	color: #d3d2d2;
+	font-size: 14px;
+	line-height: 45px;
+	letter-spacing: 0.25px;
+	position: relative;
+} 
+.header__phone{
+	padding-left: 20px;
+	padding-right: 30px;
+  
+}
+.header__phone:before{
+	content: "\f095";
+	 font-family: 'icomoon' !important;
+	 position: absolute;
+	 left: 3px;
+	 top: 2px;
+	 color: #ffc222;
+}
+
+.header__mail{
+	padding-left: 24px;
+}
+.header__mail:before{
+	content: "\f003";
+	 font-family: 'icomoon' !important;
+	 position: absolute;
+	 left: 3px;
+
+	 color: #ffc222;
+}
+
+/*Верстаем 2 блок*/
+
+.header__content{
+	padding: 35px 0px 23px 0px;
+
+}
+.header-inner{
+	display: flex;
+	justify-content: space-between;
+}
+.menu__link{
+
+}
+.menu__link li{
+	display: inline-block;
+}
+.menu__link a{
+	line-height: 36px;
+	padding: 0px 20px 0px 20px;
+	border: 1px solid transparent;
+	margin-right: 5px;
+	color: #323232;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	transition-duration: 0.65s;
+
+}
+.menu__link a:hover{
+	border-color: #ffc222;
+	
+}
+
+/*верстаем 3 блок сайта*/
+.slider__wrap{
+	height: 500px;
+	background-image: url(../img/backhead.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.slider__content{
+	margin: 0 auto;
+	max-width: 665px;
+	padding-top: 130px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+}
+.slider-title{
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.slider-title h1{
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 30px;
+}
+.slider-article{
+	margin-top: 15px;
+	color:#d3d2d2;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 0 10px 0 10px;
+	min-height: 70px;
+}
+.slider-btn p{
+	line-height: 40px;
+	padding: 0px 45px 0px 22px;
+	color: #ffffff;
+	margin-top: 50px;
+	border: 1px solid #ffc222;
+	display: inline-block;
+	position: relative;
+
+}
+
+.slider-btn p:hover .arrow{
+	width: 32px;
+	
+	
+}
+.slider__control{
+	position: relative;
+}
+.control-item{
+	width: 40px;
+	height: 40px;
+	border: 1px solid #fff;
+	position: absolute;
+	top: -170px;
+	font-family: 'icomoon' !important;
+	line-height: 32px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	background-color: transparent;
+	border-radius: 15px;
+}
+
+.item-left{
+	content:'\f104' ;
+	left: -35%;
+}
+
+.item-right{
+	content:'\f105' ;
+	right: -35%;
+}
+
+.end{
+	background-color: #ffc222;
+
+}
+
+
+
+/*верстаем 4 блок*/
+
+.about__wrap{
+	padding: 60px 0px 35px 0px;
+}
+.about__top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.about__title{
+	width: 565px;
+	padding-left: 140px;
+	position: relative;
+}
+.about__title:before{
+	content: '';
+	width: 105px;
+	height: 2px;
+	background-color: #ffc222;
+	position: absolute;
+	top: 14%;
+	left: 5px;
+}
+.about__title-title{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+
+}
+.about__title-text{
+	line-height: 19px;
+	letter-spacing: 0.1px;
+	margin-top: 8px;
+}
+
+.about__btn a{
+	line-height: 35px;
+	border: 3px solid #e6e6e6;
+	font-family: 'Roboto', sans-serif;
+	color:#373636;
+	padding:0px 40px ;
+	transition-duration: 0.3s;
+}
+.about__btn a:hover{
+	box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.5);
+}
+.about__btn a:active{
+	box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2);
+}
+
+
+.about__bottom{
+	padding-top: 60px;
+	display: flex;
+	justify-content: space-around;
+}
+.about__item{
+	width: 355px;
+	text-align: center;
+	box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.17);
+	padding: 25px 22px;
+	transition-duration: 0.2s;
+}
+.about__item:hover{
+box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.35);
+}
+.about__item-title{
+	padding: 15px 0px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	color:#373636;
+	font-weight: 500;
+}
+
+.about__item-text{
+	color: #5e5e5e;
+}
+.about__item-btn{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding-top:80px;
+	font-family: 'Roboto', sans-serif;
+}
+.about__item-btn1 a{
+ text-decoration: underline;
+ color: #050505;
+ 
+ line-height: 40px;
+}
+.about__item-btn2 a{
+	line-height: 40px;
+	padding: 0px 45px 0px 22px;
+	color: #050505;
+	
+	border: 1px solid #ffc222;
+	display: inline-block;
+	position: relative;
+
+}
+.about__item-btn2 a:hover .arrow{
+	width: 32px;
+	
+	
+}
+.company__wrap{
+	background-image: url(../img/backcomp.jpg);
+	background-size: cover;
+	height: 300px;
+}
+.company__content{
+	max-width: 620px;
+	padding: 40px 0px 0px 0px;
+}
+.company__title{
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 24px;
+}
+.company__text{
+	color: #d3d2d2;
+	letter-spacing: 0.1px;
+	padding-top: 20px;
+	margin-bottom: 35px;
+	line-height: 24px;
+
+}
