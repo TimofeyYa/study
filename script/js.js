@@ -35,3 +35,30 @@ function slider(x){
   
 
 }
+
+
+
+
+$('.mob__menu').on('click',function(){
+	$('.menu__link').slideToggle();
+})
+
+
+const screenWidth = window.screen.width;
+const screenHeight = window.screen.height;
+
+
+setTimeout(function(){
+if (screenWidth < 1150){
+	$('.ymaps-2-1-78-map').attr('style', 
+		'width: 375px; height: 255px;')
+	$('#ymaps1616154181176452691').attr('style', 
+		'display: block; width: 375px; height: 255px;')
+}}, 800)
+
+setTimeout(function(){
+if (screenWidth < 850){
+	
+	$('.footer__item-map').attr('style', 
+		'display: none;')
+}}, 900)
